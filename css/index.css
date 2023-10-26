@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --text-color: white;
+    --background-color: #16161A;
+    --paragraph-color: #94A1B2;
+    --primary-color: #2A9D8F;
+}
+
+body {
+    background: var(--background-color);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    width: fit-content;
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+main {
+    display: grid;
+    height: calc(100vh - 90px);
+}
+
+
+
+#menu {
+    margin: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: white;
+}
+
+.menu__items {
+    background: var(--background-color);
+    color: white;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--text-color);
+    transition: all .2s ease-in-out;
+}
+
+#travaux {
+    padding: 10px;
+}
+
+
+.menu__items:hover {
+    background: var(--text-color);
+    border: 1px solid var(--background-color);
+    color: black;
+    cursor: pointer;
+}
+
+.menu__lists__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-right: 50px;
+}
+
+.menu__title {
+    font-family: Poppins;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.menu__works__list {
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu__works__list > i {
+    padding-left: 5px;
+}
+
+.menu__works__content {
+    display: none;
+    z-index: 20;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 30px;
+}
+
+#slider-container {
+    width: 400px;
+    overflow: hidden;
+    
+}
+
+#slider {
+    display: flex;
+    flex-direction: row;
+    animation: slider 15s infinite;
+}
+
+.slide {
+    width: 400px;
+}
+.slide img {
+    width: 400px;
+}
+
+.slide p {
+    color: white;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+@keyframes slider {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-400px);
+    }
+    50%{
+        transform: translateX(-800px);
+    }
+    75%{
+        transform: translateX(calc(-400px * 3));
+    }
+}

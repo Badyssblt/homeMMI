@@ -1,0 +1,51 @@
+.hero {
+    width: 400px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 130px;
+}
+
+.hero__title {
+    font-family: Poppins;
+    font-weight: bold;
+    color: white;
+}
+
+.hero__title:after {
+    content: "|";
+    animation: blink .7s infinite alternate;
+}
+
+.hero__paragraph {
+    font-family: Poppins;
+    color: var(--paragraph-color);
+}
+
+.hero__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    background: var(--primary-color);
+    font-family: Poppins;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.hero__btn:hover {
+    background: none;
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

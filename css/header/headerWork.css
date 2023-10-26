@@ -1,0 +1,28 @@
+.menu__works__integration {
+    padding-top: 10px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+.menu__works__link {
+    padding-left: 10px;
+    padding: 5px;
+    border: 1px solid transparent;
+    background-color: var(--background-color);
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.menu__works__link:hover {
+    background: white;
+    border: 1px solid var(--background-color);
+    color: var(--background-color);
+}
+
+.fa-arrow-up-right-from-square {
+    padding-left: 10px;
+}
